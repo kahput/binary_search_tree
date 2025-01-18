@@ -1,9 +1,9 @@
 # Compiler and flags
 CC := gcc
-CFLAGS := -Wall -std=c99 -Wfatal-errors
+CFLAGS := -Wall -g -std=c99 -Wfatal-errors
 
 # Executable
-EXEC := example
+EXEC := bst
 
 # Directories
 SRC_DIR := src
@@ -11,7 +11,7 @@ BIN_DIR := bin
 
 # Include and linking flags
 INCLUDES := -I ./src/
-LIBRARIES := 
+LIBRARIES := -lraylib
 
 # Source files and object files
 SOURCES := $(shell find $(SRC_DIR) -name '*.c')
